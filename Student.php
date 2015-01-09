@@ -12,7 +12,7 @@ class Student
         $this-> surname = '';
         $this->first_name = '';
         $this->emails = array();
-        $this->grades=array();
+        $this->grades = array();
     }
     
     function add_email($which, $address)
@@ -39,7 +39,7 @@ class Student
     
     function toString()
     {
-        $result = $this->first_name . '' . $this->surname;
+        $result = $this->first_name . ' ' . $this->surname;
         
         $result .= '('.$this->average().")\n";
         
