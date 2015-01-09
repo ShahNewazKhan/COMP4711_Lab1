@@ -13,8 +13,9 @@ and open the template in the editor.
         <?php
             include('Student.php');
             
-            $students = array();
+            $students = array(); //init the students array 
             
+            //Init first student object
             $first = new Student();
             $first->surname = "Doe";
             $first->first_name = "John";
@@ -25,6 +26,7 @@ and open the template in the editor.
             $first->add_grade(55);
             $students['j123'] = $first;
             
+            //Init second student object
             $second = new Student();
             $second->surname = "Einstein";
             $second->first_name = "Albert";
@@ -35,6 +37,7 @@ and open the template in the editor.
             $second->add_grade(55);
             $students['a456'] = $second;
             
+            //Init third student object
             $third = new Student();
             $third->surname = "Khan";
             $third->first_name = "Shah Newaz";
@@ -45,8 +48,10 @@ and open the template in the editor.
             $third->add_grade(55);
             $students['s123'] = $third;
             
+            //Sort students in alphabetical order
             ksort($students);
             
+            //Print out all student objects to screen
             foreach($students as $student)
             {
                 echo $student->toString();
