@@ -22,7 +22,7 @@ class Student
     
     function add_grade($grade)
     {
-        $this->grade[] = $grade;
+        $this->grades[] = $grade;
     }
     
     function average()
@@ -34,7 +34,7 @@ class Student
             $total += $value;
         }
         
-        return $total / count($this-grades);
+        return $total / count($this->grades);
     }
     
     function toString()

@@ -45,7 +45,7 @@ and open the template in the editor.
             $third->add_grade(55);
             $students['s123'] = $third;
             
-            
+            ksort($students);
             
             foreach($students as $student)
             {
